@@ -1,9 +1,10 @@
 :root {
   font-size: 62.5%;
 
-  --heading-primary: hsl(240, 9%, 89%);
-  --nav-primary: hsl(240, 7%, 78%);
-  --bc-primary: hsl(0, 0%, 100%);
+  --heading-primary: #E1E1E6;
+  --nav-primary: #C4C4CC;
+
+  --bc-primary: #FFFFFF;
   --bg-base: hsl(0, 0%, 0%);
   --ff-primary: 'Roboto', sans-serif;
 }
@@ -16,6 +17,7 @@
 
 body {
   font-size: 1.8rem;
+  line-height: 2.8rem;
   font-family: var(--ff-primary);
   color: var(--heading-primary);
   background-color: var(--bg-base);
@@ -36,4 +38,62 @@ nav a {
 
 nav a:hover {
   font-weight: bold;
+}
+
+h1 {
+  font-size: 4.8rem;
+  line-height: 6rem;
+  font-weight: bold;
+}
+
+.home {
+  width: 40rem;
+  margin: 29.4rem auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.home button {
+  color: var(--bc-primary);
+  text-transform: uppercase;
+  font-family: var(--ff-primary);
+  font-weight: bold;
+
+  width: 19.5rem;
+  height: 4.8rem;
+
+  background: transparent;
+  border: 2px solid var(--bc-primary);
+  border-radius: 5px;
+
+  cursor: pointer;
+
+  transition: all 300ms;
+}
+
+.home button:hover {
+  transform: scale(1.1);
+  animation: blink 400ms;
+}
+
+.content {
+  width: 64.8rem;
+  margin: 18.5rem 0 0 10.2rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  align-items: flex-start;
+  /* justify-content: center; */
+}
+
+@keyframes blink {
+  50% {
+    background-color: var(--bc-primary);
+    color: var(--bg-base);
+  }
 }

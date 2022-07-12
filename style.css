@@ -5,6 +5,7 @@
   --nav-primary: #C4C4CC;
 
   --bc-primary: #FFFFFF;
+  --bc-secondary: #02799D;
   --bg-base: hsl(0, 0%, 0%);
   --ff-primary: 'Roboto', sans-serif;
 }
@@ -88,7 +89,7 @@ h1 {
 
 .home button:hover {
   transform: scale(1.1);
-  animation: blink 400ms;
+  animation: blink 800ms;
 }
 
 .content {
@@ -105,6 +106,6 @@ h1 {
 @keyframes blink {
   50% {
     background-color: var(--bc-primary);
-    color: var(--bg-base);
+    color: var(--bc-secondary);
   }
 }

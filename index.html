@@ -12,13 +12,15 @@
 
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="home-bg">
   <nav>
     <img src="/images/logo.svg" alt="Logo branco do site SPA Universe em formato de galaxia espiral">
-    <a href="/" onclick="window.route()">Home</a>
-    <a href="/universe" onclick="window.route()">O Universo</a>
-    <a href="/explore" onclick="window.route()">Exploração</a>
+    <a href="/" onclick="window.route()" id="nav-home">Home</a>
+    <a href="/universe" onclick="window.route()" id="nav-universe">O Universo</a>
+    <a href="/explore" onclick="window.route()" id="nav-explore">Exploração</a>
   </nav>
+
+  <img id="bg-image" src="./images/home.png" alt="">
 
   <div id="app"></div>
 

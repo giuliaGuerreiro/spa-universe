@@ -1,3 +1,7 @@
+import {
+  contentHTML
+} from "./elements.js"
+
 export class Router {
   routes = {}
 
@@ -22,7 +26,7 @@ export class Router {
     
     fetch(route).then(data => data.text())
     .then(html => {
-      document.querySelector('#app').innerHTML = html;
+      contentHTML.innerHTML = html;
     })
   }
 }

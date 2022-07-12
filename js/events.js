@@ -8,12 +8,7 @@ export default function Events({backgroundImage}) {
     }  
   }
 
-  function hrefButton() {
-    
-  }
-
   return {
-    changeBackgroundImage,
-    hrefButton
+    changeBackgroundImage
   }
 }
